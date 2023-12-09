@@ -1,6 +1,6 @@
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
-function type_Animation() {
+function Type_Animation() {
   return (
     <div className='text-yellow-400  w-1/2 transition-shadow '>
     <TypeAnimation 
@@ -32,4 +32,4 @@ function type_Animation() {
   )
 }
 
-export default type_Animation
+export default Type_Animation;
