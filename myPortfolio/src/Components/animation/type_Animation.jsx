@@ -2,18 +2,18 @@ import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 function Type_Animation() {
   return (
-    <div className='text-yellow-400  w-1/2 transition-shadow '>
+    <div className='text-yellow-400  w-1/2 transition-shadow h-full '>
     <TypeAnimation 
      sequence={[
        // Same substring at the start will only be typed out once, initially
        'Wed Developer',
-       1000, // wait 1s before replacing "Mice" with "Hamsters"
+       2000, // wait 1s before replacing "Mice" with "Hamsters"
        'Software engg',
-       1000,
+       2000,
        'data minning',
-       1000,
+       2000,
        'App developer',
-       1000
+       2000
      ]}
      wrapper="span"
      speed={50}
