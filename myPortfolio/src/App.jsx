@@ -12,8 +12,7 @@ function App() {
   <>
   <div>
     <Head/>
-    <Type_Animation
-    />
+    <Type_Animation/>
   </div>
   
   </>

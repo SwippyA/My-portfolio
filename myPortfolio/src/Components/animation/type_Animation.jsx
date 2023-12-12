@@ -2,7 +2,7 @@ import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 function Type_Animation() {
   return (
-    <div className='text-yellow-400  w-1/2 transition-shadow h-full '>
+    <div className='text-yellow-200  w-1/2 transition-shadow h-full '>
     <TypeAnimation 
      sequence={[
        // Same substring at the start will only be typed out once, initially
