@@ -37,8 +37,8 @@ function Home() {
             
           </div>
         </div>
-        <div className="  h-1/3 ">
-          <div className="w-11/12 h-11/12 bg-white p-7 box-border overflow-hidden rounded-full ">
+        <div className=" mt-7  h-1/3  z-0">
+          <div className="w-11/12 h-11/12 z-0 bg-white p-7 box-border overflow-hidden rounded-full ">
             <img
               className="saturate-0 rounded-full transition-transform duration-1000 hover:saturate-100 ease-in-out transform-gpu hover:scale-110   "
               src="https://avatars.githubusercontent.com/u/146545025?v=4"

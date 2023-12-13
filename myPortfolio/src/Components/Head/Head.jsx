@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+
+
 
 
 function Head() {
+
+ const [navbar,setnavbar]=useState(false);
+
+ const change_bg =()=>{
+    if(window.scrollY >=10){
+      setnavbar(true);
+    }
+    if(window.scrollY <=10){
+      setnavbar(false);
+    }
+ }
+
+ window.addEventListener('scroll',change_bg);
+    
+
+  
   return (
    
     <>
-      <nav className="bg-yellow-200 flex" >
+      <nav className={navbar ?'bg-white flex fixed w-full z-10  ' :'bg-yellow-200 flex fixed w-full z-10  '}
+          
+      >
         <div className="text-black text-3xl p-2 ml-16 font-bold">Shubhankar</div>
         <div className="text-black flex gap-6 p-3 ml-auto mr-24">
           <div className="pt-1">
