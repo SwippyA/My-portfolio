@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Menu from "../Menu/Menu";
 function Head() {
   const [navbar, setnavbar] = useState(false);
 
@@ -11,7 +12,6 @@ function Head() {
       setnavbar(false);
     }
   };
-
   window.addEventListener("scroll", change_bg);
 
   return (
@@ -42,7 +42,7 @@ function Head() {
           </div>
           <div className="font-bold text-xl">+91 9004987482</div>
           <div className="pt-1">
-            <a href="">
+            <button>
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-black"
                 aria-hidden="true"
@@ -58,7 +58,7 @@ function Head() {
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
       </nav>
