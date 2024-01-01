@@ -8,12 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <Head />
-        <Home />
-        <Menu></Menu>
-        <Footer />
-      </div>
+      
     </>
   );
 }

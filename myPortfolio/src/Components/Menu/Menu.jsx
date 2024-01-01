@@ -5,6 +5,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaMeta } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
+import  {Link,NavLink} from "react-router-dom"
 function Menu() {
   return (
     <>
@@ -13,36 +14,61 @@ function Menu() {
           <button className="text-white font-bold text-lg ">X</button>
         </div>
         <div className="flex flex-col items-center justify-center p-3 gap-8 my-2 relative  top-10">
-          <a
-            className="text-white text-lg font-bold hover:text-yellow-200 "
-            href=""
+          <NavLink 
+          to="/home"
+            className={({isActive})=>
+          
+              `text-white text-lg  font-bold hover:text-yellow-200 `
+          
+            }
+            
           >
             Home
-          </a>
-          <a
-            className="text-white text-lg font-bold hover:text-yellow-200"
-            href=""
+          </NavLink>
+          <NavLink 
+          to="/Portfolio"
+            className={({isActive})=>
+          
+              `text-white text-lg  font-bold hover:text-yellow-200 `
+          
+            }
+            
           >
             Portfolio
-          </a>
-          <a
-            className="text-white text-lg font-bold hover:text-yellow-200 "
-            href=""
+          </NavLink>
+          <NavLink 
+          to="/contact"
+            className={({isActive})=>
+          
+              `text-white text-lg  font-bold hover:text-yellow-200 `
+          
+            }
+            
           >
-            Contact Me
-          </a>
-          <a
-            className="text-white text-lg font-bold  hover:text-yellow-200"
-            href=""
+            Contact us
+          </NavLink>
+          <NavLink 
+          to="/about"
+            className={({isActive})=>
+          
+              `text-white text-lg  font-bold hover:text-yellow-200 `
+          
+            }
+            
           >
-            About Me
-          </a>
-          <a
-            className="text-white text-lg font-bold hover:text-yellow-200 "
-            href=""
+            about me
+          </NavLink>
+          <NavLink 
+          to="/resume"
+            className={({isActive})=>
+          
+              `text-white text-lg font-bold hover:text-yellow-200 `
+          
+            }
+            
           >
-            Resume/CV
-          </a>
+            Resume
+          </NavLink>
         </div>
         <div className=" flex items-center  justify-center p-4 mt-4">
           <a className="p-3 saturate-0 hover:saturate-100" href="">

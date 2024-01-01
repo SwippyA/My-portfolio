@@ -1,9 +1,11 @@
 import React from "react";
 import Type_Animation from "../animation/type_Animation";
-
+import Head from "../Head/Head";
+import Footer from "../Footer/Footer";
 function Home() {
   return (
     <>
+    
     <div>
     <div className=" flex bg-yellow-200 w-full h-full items-center justify-between p-11">
         <div className="flex flex-col p-4 gap-2">
@@ -72,6 +74,7 @@ function Home() {
     </div>
      
       </div>
+    
     </>
   );
 }
