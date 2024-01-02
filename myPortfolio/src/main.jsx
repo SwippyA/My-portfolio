@@ -7,6 +7,7 @@ import Layout from './Layout.jsx'
 
 import Home from './Components/Home/home.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+import About from './Components/About/About.jsx'
 
 const router=createBrowserRouter([
   {
@@ -22,8 +23,8 @@ const router=createBrowserRouter([
         element:<Menu/>
       },
       {
-        path:"",
-        element:<about/>
+        path:"about",
+        element:<About/>
       }
     ]
   }
