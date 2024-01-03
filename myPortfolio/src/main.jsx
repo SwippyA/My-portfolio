@@ -8,6 +8,7 @@ import Layout from './Layout.jsx'
 import Home from './Components/Home/home.jsx'
 import Menu from './Components/Menu/Menu.jsx'
 import About from './Components/About/About.jsx'
+import Resume from './Components/Resume/Resume.jsx'
 
 const router=createBrowserRouter([
   {
@@ -25,7 +26,11 @@ const router=createBrowserRouter([
       {
         path:"about",
         element:<About/>
-      }
+      },
+      {
+        path:"resume",
+        element:<Resume/>
+      },
     ]
   }
 ]);

@@ -16,8 +16,8 @@ function Menu() {
           </NavLink>
         </div>
         <div className="flex flex-col items-center justify-center p-3 gap-8 my-2 relative  top-10">
-          <NavLink
-            to="/home"
+          <NavLink 
+            to="/"
             className={({ isActive }) =>
               ` text-lg ${
                 isActive ? "text-yellow-200" : "text-white"
@@ -34,7 +34,7 @@ function Menu() {
               } font-bold hover:text-yellow-200 `
             }
           >
-            About
+            About Me
           </NavLink>
           <NavLink
             to="/contact"
@@ -47,14 +47,14 @@ function Menu() {
             Contact us
           </NavLink>
           <NavLink
-            to="/about"
+            to="/resume"
             className={({ isActive }) =>
               ` text-lg ${
                 isActive ? "text-yellow-200" : "text-white"
               } font-bold hover:text-yellow-200 `
             }
           >
-            about me
+            Resume
           </NavLink>
           <NavLink
             to="/resume"
@@ -68,7 +68,7 @@ function Menu() {
           </NavLink>
         </div>
         <div className=" flex items-center  justify-center p-4 mt-4">
-          <a className="p-3 saturate-0 hover:saturate-100" href="">
+          <a className="p-3 saturate-0 hover:saturate-100" href="https://github.com/SwippyA">
             <IconButton text="Github">
               <FaGithub size={30} />
             </IconButton>
@@ -91,9 +91,9 @@ function Menu() {
               <FaXTwitter size={30} />
             </IconButton>
           </a>
-          <a className="p-3 saturate-0 hover:saturate-100" href="">
+          <a className="p-3 saturate-0 hover:saturate-100" href="https://www.linkedin.com/in/shubhankar-swain-82697924b/">
             <IconButton
-              text="Twitter"
+              text="Linkdin"
               className=" bg-blue-800 flex p-2 items-center rounded-lg text-white"
               color="bg-black"
             >

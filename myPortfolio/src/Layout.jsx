@@ -4,13 +4,13 @@ import Head from './Components/Head/Head'
 import Footer from './Components/Footer/Footer'
 import Home from './Components/Home/home'
 import About from './Components/About/About'
+import Resume from './Components/Resume/Resume'
 
 function Layout() {
   return (
     <>
     <Head/>
     <Outlet/>
-    
     <Footer/>
     </>
     
