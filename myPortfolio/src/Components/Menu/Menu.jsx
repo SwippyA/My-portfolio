@@ -64,7 +64,7 @@ function Menu() {
               } font-bold hover:text-yellow-200 `
             }
           >
-            Resume
+            Projects
           </NavLink>
         </div>
         <div className=" flex items-center  justify-center p-4 mt-4">
