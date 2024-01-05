@@ -10,6 +10,7 @@ import Menu from './Components/Menu/Menu.jsx'
 import About from './Components/About/About.jsx'
 import Resume from './Components/Resume/Resume.jsx'
 import Contact from './Components/Contact/Contact.jsx'
+import Project from './Components/Projects/Project.jsx'
 
 const router=createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router=createBrowserRouter([
       {
         path:"contact",
         element:<Contact/>
+      },
+      {
+        path:"Project",
+        element:<Project/>
       },
     ]
   }

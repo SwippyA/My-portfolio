@@ -57,7 +57,7 @@ function Menu() {
             Resume
           </NavLink>
           <NavLink
-            to="/resume"
+            to="/project"
             className={({ isActive }) =>
               ` text-lg ${
                 isActive ? "text-yellow-200" : "text-white"
@@ -67,7 +67,7 @@ function Menu() {
             Projects
           </NavLink>
         </div>
-        <div className=" flex items-center  justify-center p-4 mt-4">
+        <div className=" flex items-center  justify-center p-4 mt-24">
           <a className="p-3 saturate-0 hover:saturate-100" href="https://github.com/SwippyA">
             <IconButton text="Github">
               <FaGithub size={30} />

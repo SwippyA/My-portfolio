@@ -29,7 +29,8 @@ function Head() {
         </div>
         <div className="text-black flex gap-6 p-3 ml-auto mr-24">
           <div className="pt-1">
-            <a href="https://flowbite.com/docs/customize/icons/">
+            <NavLink to="/contact">
+            
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-black"
                 aria-hidden="true"
@@ -39,7 +40,9 @@ function Head() {
               >
                 <path d="M16 0H4a2 2 0 0 0-2 2v1H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM13.929 17H7.071a.5.5 0 0 1-.5-.5 3.935 3.935 0 1 1 7.858 0 .5.5 0 0 1-.5.5Z" />
               </svg>
-            </a>
+            
+            </NavLink>
+            
           </div>
           <div className="font-bold text-xl">+91 9004987482</div>
           <div className="pt-1">
