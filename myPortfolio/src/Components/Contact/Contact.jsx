@@ -204,7 +204,24 @@ function Contact() {
             stiffness: 100,
           }}
         >
-          <h1 className=" text-5xl font-bold">Estimate your Project?</h1>
+          <motion.h1 className=" text-5xl font-bold"
+           animate={{
+            x: 0,
+
+            opacity: 1,
+          }}
+          initial={{
+            x: -10000,
+
+            opacity: 0.1,
+          }}
+          transition={{
+            type: "tween",
+            duration: 1,
+            delay: 0.1,
+          }}
+          
+          >Estimate your Project?</motion.h1>
 
           <div className="flex flex-col gap-5 ">
             <label className="block text-xl font-semibold" htmlFor="Name">
@@ -234,11 +251,19 @@ function Contact() {
               className=" text-left bg-black text-white w-fit px-8 mt-10 hover:bg-gray-700 duration-200 py-4 text-lg font-bold"
               whileInView={{
                 scale: [1.2, 0.6, 1.5, 1],
-                radius: [50, 20, 30, 0],
+                rotate:0,
+                borderRadius:[70,40,17,0]
               }}
               initial={{
                 scale: 1,
-                radius: 0,
+                borderRadius:0,
+                rotate:270
+              }}
+              transition={{
+                
+                type:"spring",
+                stiffness:30
+    
               }}
             >
               Send
