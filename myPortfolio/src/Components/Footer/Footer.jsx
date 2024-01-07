@@ -1,24 +1,44 @@
+import { useRef } from "react";
 import React from "react";
+import { motion, useInView } from "framer-motion";
 
 function Footer() {
   return (
     <>
       <footer className="bg-black p-6 ">
-        <div className="flex text-white p-7 items-center justify-between ">
+        <motion.div
+          className="flex text-white p-7 items-center justify-between "
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          initial={{
+            y: 30,
+            opacity: 0.3,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+          }}
+        >
           <div>
             Copyright @ 2023{" "}
             <span className="text-yellow-200  font-bold  text-lg underline hover:text-yellow-300 duration-100  hover:cursor-pointer">
-            <a href="https://www.linkedin.com/in/shubhankar-swain-82697924b/">Shubhankar.</a>
+              <a href="https://www.linkedin.com/in/shubhankar-swain-82697924b/">
+                Shubhankar.
+              </a>
             </span>{" "}
             All Rights Reserved.
           </div>
           <div>
             Designed by{" "}
             <span className="text-yellow-200 underline font-bold  text-lg  hover:text-yellow-300  duration-100 hover:cursor-pointer">
-              <a href="https://www.linkedin.com/in/shubhankar-swain-82697924b/">Shubhankar Swain.</a>
+              <a href="https://www.linkedin.com/in/shubhankar-swain-82697924b/">
+                Shubhankar Swain.
+              </a>
             </span>
           </div>
-        </div>
+        </motion.div>
         <div className="flex justify-end text-white">
           <a href="#">
             <svg

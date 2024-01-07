@@ -26,7 +26,7 @@ function Home() {
             }}
             transition={{
               type:"spring",
-              stiffness:30
+              stiffness:60
             }}
             
             
@@ -36,7 +36,7 @@ function Home() {
             </div>
             <div className="text-2xl font-semibold">based on Pune,India.</div>
             <motion.div 
-            className="flex gap-7 m-3 justify-start"
+            className="flex gap-7 m-3 ml-1 mt-9 justify-start"
             animate={{
               y:0,
               opacity:1

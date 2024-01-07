@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Link,NavLink} from 'react-router-dom'
+import {motion} from "framer-motion"
 
 import Menu from "../Menu/Menu";
 function Head() {
@@ -17,15 +18,30 @@ function Head() {
 
   return (
     <>
-      <nav
+      <motion.div
         className={
           navbar
             ? "bg-white flex fixed w-full z-10  "
             : "bg-yellow-200 flex fixed w-full z-10  "
         }
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        initial={{
+          y: -30,
+          opacity: 0.3,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+        }}
       >
         <div className="text-black text-3xl p-2 ml-16 font-bold">
+          <NavLink to="/">
           Shubhankar
+          </NavLink>
+          
         </div>
         <div className="text-black flex gap-6 p-3 ml-auto mr-24">
           <div className="pt-1">
@@ -44,7 +60,7 @@ function Head() {
             </NavLink>
             
           </div>
-          <div className="font-bold text-xl">+91 9004987482</div>
+          <div className="font-bold text-xl">(+91) 9004987482</div>
           <div className="pt-1">
             <NavLink to="/menu">
               <svg
@@ -65,7 +81,7 @@ function Head() {
             </NavLink>
           </div>
         </div>
-      </nav>
+      </motion.div>
     </>
   );
 }
