@@ -1,10 +1,26 @@
 import React from "react";
 import {NavLink} from 'react-router-dom'
+import {motion} from "framer-motion"
 
 function Project() {
   return (
     <>
-      <div className="flex flex-col">
+      <motion.div
+      animate={{
+        x:0,
+
+        opacity: 1,
+      }}
+      initial={{
+        x: -100,
+        opacity: 0.1,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 60,
+      }}
+      
+      className="flex flex-col">
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className="bg-yellow-200 font-semibold p-1 mt-28 text-lg">Projects</h1>
           <h1 className="text-5xl font-bold">
@@ -116,13 +132,38 @@ function Project() {
 
         <div className=" flex flex-col justify-center items-center bg-[url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  ">
             <h1 className="text-6xl m-32 text-white">Interested in working with me?</h1>
-            <button className=" hover:bg-yellow-300 font-semibold text-xl bg-yellow-200 px-4  py-2 border-2 m-4 border-black">
+            <motion.button 
+              whileInView={{
+                scale: 1,
+        
+                opacity: 1,
+              }}
+              initial={{
+                scale: 0.1,
+                opacity: 0.1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 60,
+              }} 
+              whileTap={{
+                scale: 0.8,
+        
+                opacity: 1,
+              }}
+              whileHover={{
+                scale:1.3
+              }}
+
+             
+            
+            className=" hover:bg-yellow-300 font-semibold text-xl bg-yellow-200 px-4  py-2 border-2 m-4 border-black">
                 <NavLink to="/contact">
                     Hire Me 
                 </NavLink>
-            </button>
+            </motion.button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

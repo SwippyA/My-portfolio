@@ -1,9 +1,25 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 function Resume() {
+  
   return (
     <>
-      <div className="flex flex-col mx-9  mb-16 justify-center items-center ">
+      <motion.div 
+      animate={{
+        scale: 1,
+
+        opacity: 1,
+      }}
+      initial={{
+        scale: 0.1,
+        opacity: 0.1,
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 60,
+      }}
+      className="flex flex-col mx-9  mb-16 justify-center items-center ">
         <div className="flex flex-col items-center">
           <div className="bg-yellow-200 font-semibold p-1 mt-24 text-xl mb-2">
             Resume
@@ -141,7 +157,7 @@ function Resume() {
         <div className="my-16">
             <a className="border-2 border-black font-semibold  hover:bg-yellow-200 duration-500 px-5 py-4 " href="../../../resume.pdf" download="shubhankar.swain.pdf">Download CV</a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
