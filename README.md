@@ -119,7 +119,7 @@ You can customize animations further depending on the effect you want to achieve
 - **React**: For building the user interface with reusable components.
 - **Vite**: A fast build tool for optimizing and bundling the project.
 - **Framer Motion**: For adding animations and transitions.
-- **CSS**: For styling the layout and design. (You can use CSS modules, Sass, or any CSS-in-JS solution as preferred.)
+- **Tailwind**: For styling the layout and design. (You can use CSS modules, Sass, or any CSS-in-JS solution as preferred.)
 
 ## Customization
 
@@ -135,3 +135,4 @@ If you'd like to contribute to this project, feel free to fork the repository an
 ---
 
 Thank you for using this portfolio template. Make it your own and showcase your work!
+website : https://golden-sunburst-420f51.netlify.app/
